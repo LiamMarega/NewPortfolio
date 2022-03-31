@@ -1,7 +1,7 @@
 import React from "react";
 import "./Presentacion.css";
 import { Container, Image } from "react-bootstrap";
-import img3D from "../../Images/fondoProgramacion.svg"
+import img3D from "../../Images/fondoProgramacion.png"
 
 
 function Presentacion() {
