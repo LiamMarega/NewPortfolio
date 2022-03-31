@@ -2,9 +2,12 @@ import React from "react";
 import "./Presentacion.css";
 import { Container, Image } from "react-bootstrap";
 import img3D from "../../Images/fondoProgramacion.svg"
+
+
 function Presentacion() {
   return (
     <Container>
+
       <div  className="Presentacion_Container" id="app">
         <div className="title">
           <div className="title-inner">
@@ -24,6 +27,7 @@ function Presentacion() {
             fluid
           />
         </div>
+  
       </div>
       </Container>
   );
