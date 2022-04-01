@@ -16,7 +16,7 @@ function Loading() {
     if (isMounted) {
       setTimeout(function () {
         navigateTo("/home");
-      }, 1200000);
+      }, 12000);
     }
     return () => { isMounted = false };
   });
