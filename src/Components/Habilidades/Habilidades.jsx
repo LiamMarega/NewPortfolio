@@ -5,7 +5,7 @@ import "./Habilidades.css";
 function Habilidades() {
   return (
     <Container fluid className="Habilidades_Container">
-
+      <Container className="Habilidades_ContainerHijo" >
       <Row >
         <Col sm={12} xl={12}>
         <h1>Sobre Mí</h1>
@@ -113,7 +113,7 @@ function Habilidades() {
       </Row>
 
       
-
+      </Container>
     </Container>
   );
 }
