@@ -40,7 +40,6 @@
 
 .Container_Col_Especificaiones {
   margin: 30px;
-
 }
 
 .rainbow {
@@ -86,7 +85,6 @@
 }
 
 .especificaciones {
- 
   animation-name: opacidad;
   animation-duration: 8s;
   padding: 30px;
@@ -96,11 +94,9 @@
   font-size: 16px;
 }
 .especificaciones h2 {
- 
- margin-left: 45px;
+  margin-left: 45px;
 }
 .especificaciones ul {
- 
   list-style: none;
   font-size: 20px;
 }
