@@ -2,10 +2,10 @@ import React from 'react';
 import './Presentacion.css';
 import { Container, Image } from 'react-bootstrap';
 import img3D from '../../Images/fondoProgramacion.png';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function Presentacion() {
   return (
-    <Container>
+    <Container fluid>
       <div className='Presentacion_Container' id='app'>
         <div className='title'>
           <div className='title-inner'>

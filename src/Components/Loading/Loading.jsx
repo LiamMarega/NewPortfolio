@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Loading.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 /* import { Link } from "react-scroll"; */
 import { useNavigate } from 'react-router-dom';
 

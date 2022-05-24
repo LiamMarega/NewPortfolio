@@ -5,6 +5,7 @@ import Presentacion from '../Components/Presentacion/Presentacion.jsx';
 import Proyectos from '../Components/Proyectos/Proyectos.jsx';
 import Habilidades2 from '../Components/Habilidades2/Habilidades2.jsx';
 import Personaje from '../Components/Personaje/Personaje.jsx';
+import Footer from '../Components/Footer/Footer.jsx';
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <Proyectos />
       <Habilidades2 />
       <Personaje />
+	  <Footer />
     </div>
   );
 }

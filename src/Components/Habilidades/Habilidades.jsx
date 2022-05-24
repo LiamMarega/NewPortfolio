@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import './Habilidades.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function Habilidades() {
   return (
 
