@@ -6,7 +6,7 @@ import fotoRocket from '../../Images/3.png';
 import fotoPerro from '../../Images/4.png';
 import fotoTarp from '../../Images/5.png';
 import fotoMovie from '../../Images/6.png';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 /* import MUI */
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
@@ -64,14 +64,15 @@ function Proyectos() {
   return (
     <Container fluid className='Proyectos_Container'>
       <Container fluid className='Proyectos_Container_Data1'>
+		  
         <Row>
-          <ImageList variant='masonry' cols={3} gap={8}>
+          {/* <ImageList variant='masonry' cols={3} gap={8}>
             {itemData.map((item) => (
               <ImageListItem key={item.img}>
                 <img src={`${item.img}?w=248&fit=crop&auto=format`} srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`} alt={item.title} loading='lazy' />
               </ImageListItem>
             ))}
-          </ImageList>
+          </ImageList> */}
         </Row>
       </Container>
     </Container>

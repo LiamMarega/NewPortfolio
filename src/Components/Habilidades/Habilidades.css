@@ -10,6 +10,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  text-align: center;
 }
 
 .Habilidades_ContainerHijo {
@@ -34,8 +35,13 @@
 }
 
 .Container_Row_Especificaiones {
-  display: flex;
-  width: 50%;
+	padding-top: 100px;
+	display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .Container_Col_Especificaiones {
@@ -93,12 +99,13 @@
   list-style: none;
   font-size: 16px;
 }
-.especificaciones h2 {
-  margin-left: 45px;
-}
+
 .especificaciones ul {
   list-style: none;
   font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+
 }
 
 .especificaciones img {

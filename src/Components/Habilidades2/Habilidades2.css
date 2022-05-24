@@ -230,6 +230,7 @@
 
 
 
+
  
 /* / Tablets en horizonal y escritorios normales
    -------------------------------------------------------------------------  */
@@ -237,14 +238,25 @@
  
 /* / Escritorios muy anchos
    -------------------------------------------------------------------------  */
-@media (min-width: 1200px) { }
+   @media (max-width: 1454px) {	
+	.illustration-editor{
+		transform: scale(0.8);
+	} }
 
 
 @media (max-width: 1024px) {	
-	.Habilidades2_Col_Codigo{
-		display: none;
+	.illustration-editor{
+		transform: scale(0.5);
 	} }
 
 @media (max-width: 768px) { 
+	.illustration-editor{
+		transform: scale(0.4);
+	} 
+}
 
+@media (max-width: 358px) { 
+	.illustration-editor{
+		transform: scale(0.2);
+	} 
 }
