@@ -26,15 +26,13 @@ function Loading() {
 
   return (
     <Container className={loading ? 'Loading true' : 'Loading false'} fluid>
-      <div className='landig__nombre'>
+      <div className='landing__nombre'>
         <div className='containerLoading'>
           <h1>Hola, yo soy</h1>
           <h1>Liam.</h1>
         </div>
-
-        <div className='imagenLoading'></div>
       </div>
-      <div className='d-flex flex-column justify-content-center w-100 h-100'></div>
+  
     </Container>
   );
 }
