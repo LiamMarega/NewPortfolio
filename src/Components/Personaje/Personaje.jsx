@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import Spline from '@splinetool/react-spline';
-import { Col, Container, Row } from 'react-bootstrap';
+import React from 'react';
+import { Col, Container, Image, Row } from 'react-bootstrap';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -10,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import CircularProgress from '@mui/material/CircularProgress';
 import './Personaje.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import ImageURL from "../../Images/24.png"
 
 
 const bull = (
@@ -21,15 +20,6 @@ const bull = (
 
 function Personaje() {
 
-	const [loading3d, setLoading3d] = useState(true)
-
-	useEffect(() => {
-	  
-	setTimeout(() => {
-		setLoading3d(false)
-	}, 6000);
-	
-	}, [])
 
   return (
     <Container fluid className='Personaje'>
@@ -101,7 +91,7 @@ function Personaje() {
             </Card>
           </Col>
           <Col sm={12} md={8} style={{ cursor: 'pointer' }}>
-		  {loading3d ? <div style={{ width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center', display: "flex" }}><CircularProgress style={{width: '150px', height: '150px'}}/> </div> : <Spline scene="https://prod.spline.design/FvgoVSjhqTsvcsfp/scene.splinecode" />} 
+ <Image style={{marginTop: "-10%"}} width={"100%"} loading="lazy" lazyLoading src={ImageURL} /> 
           </Col>
         </Row>
       </Container>
