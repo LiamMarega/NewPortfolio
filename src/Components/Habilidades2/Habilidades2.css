@@ -1,12 +1,21 @@
 .Habilidades2_Container {
   height: 100vh;
+  padding-top: 50%;
+  padding-bottom: 40%;
+  background-image: url('../../Images/FondoPortfolio1.svg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .Habilidades2_Row_Container{
 	width: 100%;
 }
 .Habilidades2_Container {
-  background: #001220;
+
   display: flex;
   align-items: center;
   justify-content: center;

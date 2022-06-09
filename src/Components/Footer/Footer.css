@@ -1,4 +1,18 @@
 .Footer{
 	background-color: #000000;
-	height: 10vh;
+	height: 40vh;
+}
+
+.Footer_Container, .Footer_Row  {
+	height: 100%;
+}
+.Footer_Container img {
+	width: 50%;
+
+}
+
+.ContainerLogo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

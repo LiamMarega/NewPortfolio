@@ -5,7 +5,7 @@ import img3D from '../../Images/fondoProgramacion.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function Presentacion() {
   return (
-    <Container fluid>
+    <Container fluid style={{padding: "0"}}>
       <div className='Presentacion_Container' id='app'>
         <div className='title'>
           <div className='title-inner'>
