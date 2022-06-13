@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
-import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { Animated } from 'react-animated-css';
 import './Personaje.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ImageDiseño from '../../Images/24.png';
 import ImageDesarrollo from '../../Images/16.png';
 import ImageMarketing from '../../Images/25.png';
 import Proyectos from '../Proyectos/Proyectos';
+import Valores from '../Valores/Valores';
 
 function Personaje() {
   const [select, setSelect] = useState({
@@ -20,7 +19,7 @@ function Personaje() {
     diseño: false,
     marketing: false
   });
-
+  
   const handleChange = (data) => {
     console.log(data);
     if (data == 'desarrollo') {
@@ -63,7 +62,7 @@ function Personaje() {
                   Profesional, Eficiente, Seguro
                 </Typography>
                 <Typography variant='body2'>
-                  Creamos para ti páginas web con diseños personalizados, de rápida carga, adaptables a dispositivos móviles y, enfocadas.
+                  Creo páginas web con diseños personalizados, de rápida carga, adaptables a dispositivos móviles y, enfocadas.
                   <br />
                 </Typography>
               </CardContent>
@@ -80,7 +79,7 @@ function Personaje() {
                   Diseño Grafico, Web, Mobile, UX/UI
                 </Typography>
                 <Typography variant='body2'>
-                  Creamos marcas desde cero, diseñamos logos, artes publicitarios, ilustraciones personalizadas y mucho más…
+                  Creo marcas desde cero, diseño logos, artes publicitarios, ilustraciones personalizadas y mucho más…
                   <br />
                 </Typography>
               </CardContent>
@@ -98,7 +97,7 @@ function Personaje() {
                 </Typography>
                 <Typography variant='body2'>
                   ¿Buscas ayuda para manejar tus redes sociales? <br />
-                  Entonces encontraste a la Agencia de Marketing Digital indicada para el trabajo. Conoce más sobre nuestros paquetes de social media.
+                  Entonces encontraste a la Persona indicada para el trabajo. Conoce más sobre nuestros paquetes de social media para el Marketing Digital .
                   <br />
                 </Typography>
               </CardContent>
@@ -110,18 +109,18 @@ function Personaje() {
 
           <Col sm={12} md={8}>
             {select.desarrollo ? (
-              <Image loading="lazy" className='imgState Desarrollo' style={{ marginTop: '-10%' }} width={'100%'} src={ImageDesarrollo} />
+              <Image className='imgState Desarrollo' style={{ marginTop: '-10%' }} width={'100%'} src={ImageDesarrollo} />
             ) : select.diseño ? (
-              <Image loading="lazy" className='imgState Diseño' style={{ marginTop: '-10%' }} width={'100%'} src={ImageDiseño} />
+              <Image className='imgState Diseño' style={{ marginTop: '-10%' }} width={'100%'} src={ImageDiseño} />
             ) : select.marketing ? (
-              <Image loading="lazy" className='imgState Marketing' style={{ marginTop: '-10%' }} width={'100%'} src={ImageMarketing} />
+              <Image className='imgState Marketing' style={{ marginTop: '-10%' }} width={'100%'} src={ImageMarketing} />
             ) : (
-              <Image loading="lazy" className='imgState Desarrollo' style={{ marginTop: '-10%' }} width={'100%'} src={ImageDesarrollo} />
+              <Image className='imgState Desarrollo' style={{ marginTop: '-10%' }} width={'100%'} src={ImageDesarrollo} />
             )}
           </Col>
         </Row>
       </Container>
-	  <Proyectos />
+	  <Valores />
     </Container>
   );
 }

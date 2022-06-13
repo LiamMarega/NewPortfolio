@@ -68,7 +68,7 @@ function Proyectos() {
         <Row>
 
             {itemData.map((item) => (
-              <Col xs={5} md={4}  style={{paddingBottom: "20px"}}> <Image fluid src={item.img} alt={item.title} /> </Col>
+              <Col xs={5} md={4}  style={{paddingBottom: "20px"}}> <Image fluid src={item.img} alt={item.title} loading="lazy" /> </Col>
             ))}
    
         </Row>

@@ -9,6 +9,7 @@
   background-size: cover;
   flex-direction: row;
   flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
 }
 
 .Habilidades2_Row_Container{
@@ -27,6 +28,7 @@
   grid-template-rows: 24px auto;
   justify-items: center;
   position: relative;
+  margin-left: 10%;
 }
 .code {
   position: absolute;
@@ -234,7 +236,14 @@
 /* INFORMACION */
 /* INFORMACION */
 .ContainerInformacionHabilidades p {
+  color: rgba(255, 255, 255, 0.557);
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.ContainerInformacionHabilidades h3 {
   color: white;
+  font-weight: 900;
+  font-size: 2rem;
 }
 
 
@@ -250,6 +259,7 @@
    @media (max-width: 1454px) {	
 	.illustration-editor{
 		transform: scale(0.8);
+
 	} }
 
 
@@ -260,7 +270,8 @@
 
 @media (max-width: 768px) { 
 	.illustration-editor{
-		transform: scale(0.4);
+		transform: scale(0.6);
+		margin-left: 15%;
 	} 
 }
 
