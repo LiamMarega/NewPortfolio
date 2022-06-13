@@ -6,6 +6,9 @@
     align-items: center;
 	font-family: 'Roboto', sans-serif;
 }
+.Valores_Container img{
+border-radius: 5%;
+}
 
 .Valores_ContainerInfo p , .Valores_ContainerInfo h4{
 	color: rgb(255, 255, 255);

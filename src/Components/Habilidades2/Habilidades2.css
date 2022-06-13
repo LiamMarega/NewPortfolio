@@ -1,7 +1,7 @@
 .Habilidades2_Container {
-  height: 100vh;
-  padding-top: 50%;
-  padding-bottom: 40%;
+  height: 100%;
+  padding-top: 40%;
+
   background-image: url('../../Images/FondoPortfolio1.svg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -244,6 +244,7 @@
   color: white;
   font-weight: 900;
   font-size: 2rem;
+  margin-top: 5%;
 }
 
 
