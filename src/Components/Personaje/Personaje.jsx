@@ -121,6 +121,7 @@ function Personaje() {
         </Row>
       </Container>
 	  <Valores />
+	  <Proyectos />
     </Container>
   );
 }

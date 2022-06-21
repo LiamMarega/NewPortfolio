@@ -3,6 +3,16 @@
 	height: 40vh;
 }
 
+.Footer a{
+	text-decoration: none;
+	color: white;
+}
+
+.Footer a svg{
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
 .Footer_Container, .Footer_Row  {
 	height: 100%;
 }

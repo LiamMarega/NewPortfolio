@@ -2,6 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Footer.css';
 import { Container, Image, Row, Col } from 'react-bootstrap';
+import { FiInstagram, FiGithub, FiLinkedin } from 'react-icons/fi';
+
 import Stack from '@mui/material/Stack';
 import Logo from '../../Images/LogoEmpresa.png';
 function Footer() {
@@ -21,9 +23,9 @@ function Footer() {
             {' '}
             <Stack  spacing={2}>
               <h3 style={{ marginTop: '7%' }}>Sigueme</h3>
-			<p>Linkedin</p>
-			<p>Github</p>
-			<p>Instagram</p>
+		 	<a href='https://www.linkedin.com/in/liam-marega/' target='_blank' > <FiLinkedin /> Linkedin</a>
+		  <a href='https://github.com/LiamMarega' target='_blank'> <FiGithub /> Github</a>
+			<a href='https://www.instagram.com/empresasoluciones/' target='_blank' >  <FiInstagram /> Instagram</a>
             </Stack>
           </Col>
         </Row>

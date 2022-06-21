@@ -6,6 +6,8 @@ import fotoRocket from '../../Images/3.png';
 import fotoPerro from '../../Images/4.png';
 import fotoTarp from '../../Images/5.png';
 import fotoMovie from '../../Images/6.png';
+import fotoReposteria from '../../Images/imgTorta.png';
+import fotoBar from '../../Images/imgBar.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 /* import MUI */
 import ImageList from '@mui/material/ImageList';
@@ -21,45 +23,58 @@ function Proyectos() {
   const itemData = [
     {
       img: fotoClima,
-      title: 'Wheater App'
+      title: 'Wheater App',
+	  description: 'Aplicacion para obtener el clima de una ciudad',
+	  link: 'https://wheaterapp-liammarega.netlify.app'
     },
     {
       img: fotoRocket,
-      title: 'Rocket Project'
+      title: 'Rocket Project',
+	  description: 'Aplicacion para obtener Videollamadas privadas y organizadas para instituciones',
+	  link: 'https://rocketprojectarg.netlify.app'
+
     },
     {
       img: fotoPerro,
-      title: 'Dog App'
+      title: 'Dog App',
+	  description: 'Aplicacion obtener y crear distintas razas de perros',
+	  link: 'https://dogapp-liammarega.vercel.app'
     },
     {
       img: fotoPomodoro,
-      title: 'Pomodoro'
+      title: 'Pomodoro',
+	  description: 'Reloj de pomodoro para trabajar o estudiar',
+	  link: 'https://pomodoroclock-liammarega.netlify.app'
     },
     {
       img: fotoTarp,
-      title: 'Pomodoro'
+      title: 'TARP Reader',
+	  description: 'Aplicacion escaner de posibles scams en contratos de la blockchain',
+	  link: ''
     },
 
     {
       img: fotoMovie,
-      title: 'Pomodoro'
-    }
-  ];
-  const itemData2 = [
-    {
-      img: fotoPomodoro,
-      title: 'Pomodoro'
-    },
-    {
-      img: fotoTarp,
-      title: 'Pomodoro'
+      title: 'Movie App',
+	  description: 'Aplicaion para obtener informacion real y actualizada de peliculas, series o programas de TV',
+	  link: ''
     },
 
-    {
-      img: fotoMovie,
-      title: 'Pomodoro'
-    }
+	{
+      img: fotoReposteria,
+      title: 'Template',
+	  description: 'Template de reposteria',
+	  link: 'https://template-reposteria.vercel.app'
+    },
+	{
+      img: fotoBar,
+      title: 'Template de Bar',
+	  description: 'Template de bar',
+	  link: 'https://templaterestobar.vercel.app'
+    },
+    
   ];
+
 
   return (
     <Container fluid className='Proyectos_Container'>
@@ -67,8 +82,12 @@ function Proyectos() {
 		  
         <Row>
 
-            {itemData.map((item) => (
-              <Col xs={5} md={4}  style={{paddingBottom: "20px"}}> <Image fluid src={item.img} alt={item.title} loading="lazy" /> </Col>
+            {itemData.map((item, idx) => (
+              <Col xs={5} md={3} key={idx}  style={{paddingBottom: "20px"}} > 
+			  <a href={item.link} target='_blank' >
+			  <Image style={{borderRadius: "10%"}} fluid src={item.img} alt={item.title} loading="lazy" /> 
+			  </a>
+			  </Col>
             ))}
    
         </Row>

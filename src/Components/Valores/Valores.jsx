@@ -6,6 +6,7 @@ import valores1 from '../../Images/valores1.png';
 import valores2 from '../../Images/valores2.png';
 import valores3 from '../../Images/valores3.png';
 import { Animated } from 'react-animated-css';
+import Proyectos from '../Proyectos/Proyectos';
 
 function Valores() {
 
@@ -29,9 +30,12 @@ const [isVisibleAnimated, setIsVisibleAnimated] = useState(false)
 
   return (
     <Container fluid className='Valores_Container'>
+		<Container>
+
+	
       <Row style={{ width: '100%' }}>
         <Col id='ValoresColMargin' className='valores_Col' sm={5} md={3}>
-          <Animated animationIn='bounceIn' animationOut='flipOutX' animationInDuration={3400} animationOutDuration={1400} isVisible={isVisibleAnimated}>
+          <Animated animationIn='bounceIn' animationOut='flipOutX' animationInDuration={1400} animationOutDuration={1400} isVisible={isVisibleAnimated}>
             <Image loading='lazy' fluid src={valores1} />
           </Animated>
           <div className='Valores_ContainerInfo'>
@@ -40,7 +44,7 @@ const [isVisibleAnimated, setIsVisibleAnimated] = useState(false)
           </div>
         </Col>
         <Col className='valores_Col' sm={5} md={{ span: 3, offset: 1 }}>
-		<Animated animationIn='bounceIn' animationOut='flipOutX' animationInDuration={3400} animationOutDuration={1400} isVisible={isVisibleAnimated}>
+		<Animated animationIn='bounceIn' animationOut='flipOutX' animationInDuration={1400} animationOutDuration={1400} isVisible={isVisibleAnimated}>
             <Image loading='lazy' fluid src={valores2} />
           </Animated>
           <div className='Valores_ContainerInfo'>
@@ -49,7 +53,7 @@ const [isVisibleAnimated, setIsVisibleAnimated] = useState(false)
           </div>
         </Col>
         <Col className='valores_Col' sm={5} md={{ span: 3, offset: 1 }}>
-		<Animated animationIn='bounceIn' animationOut='flipOutX' animationInDuration={3400} animationOutDuration={1400} isVisible={isVisibleAnimated}>
+		<Animated animationIn='bounceIn' animationOut='flipOutX' animationInDuration={1400} animationOutDuration={1400} isVisible={isVisibleAnimated}>
             <Image loading='lazy' fluid src={valores3} />
           </Animated>
           <div className='Valores_ContainerInfo'>
@@ -58,6 +62,9 @@ const [isVisibleAnimated, setIsVisibleAnimated] = useState(false)
           </div>
         </Col>
       </Row>
+	  </Container>
+	  
+	  
     </Container>
   );
 }
