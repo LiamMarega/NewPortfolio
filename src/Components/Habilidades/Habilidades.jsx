@@ -10,18 +10,18 @@ function Habilidades() {
 
         <Row>
           <Col sm={12} xl={12}>
-            <h1>Sobre Mí</h1>
+            <h2>Sobre Mí</h2>
           </Col>
           <Col sm={12} xl={12}>
 
-            <p className='Habilidades_Descripcion_SobreMi'> ¡Hola! 👋 Soy Liam Marega soy residente de Argentina y actual Full Stack Developer durante casi 2 años. Manejo todo el Stack Mern de JavaScript y me adapto con facilidad a entornos nuevos y al uso de nuevas tecnologías. 😊</p>
+            <p className='Habilidades_Descripcion_SobreMi'> ¡Hola! 👋 Soy Liam Marega Full Stack Developer <hr /> Manejo todo el Stack Mern de JavaScript, Soy desarrollador totalmente enfocado en mi trabajo, eficiente y profesional. <br /> Me adapto con facilidad a entornos nuevos y al uso de nuevas tecnologías. <br />  😊</p>
           </Col>
         </Row>
         <Row className='Container_Row_Especificaiones'>
           <Col className='Container_Col_Especificaiones' sm={6} md={6} xl={6}>
             <div className='rainbow'>
               <div className='especificaciones'>
-                <h2>Especificaciones</h2>
+                <h3>Especificaciones</h3>
                 <hr />
                 <ul>
                   <li>Diseño web y gráfico</li>

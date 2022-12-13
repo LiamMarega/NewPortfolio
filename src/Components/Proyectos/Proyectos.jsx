@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 /* import boostrap */
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Image, Row } from 'react-bootstrap';
 
 function Proyectos() {
   function onClick(e) {
@@ -66,13 +66,11 @@ function Proyectos() {
       <Container fluid className='Proyectos_Container_Data1'>
 		  
         <Row>
-          {/* <ImageList variant='masonry' cols={3} gap={8}>
+
             {itemData.map((item) => (
-              <ImageListItem key={item.img}>
-                <img src={`${item.img}?w=248&fit=crop&auto=format`} srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`} alt={item.title} loading='lazy' />
-              </ImageListItem>
+              <Col xs={5} md={4}  style={{paddingBottom: "20px"}}> <Image fluid src={item.img} alt={item.title} loading="lazy" /> </Col>
             ))}
-          </ImageList> */}
+   
         </Row>
       </Container>
     </Container>
