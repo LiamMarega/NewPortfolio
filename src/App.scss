@@ -1,6 +1,8 @@
+@import './assets/styles/variables.scss';
+
 .App {
   text-align: center;
-  background-color: #f7f7b9;
+  background-color: $gray;
 }
 
 .App-logo {

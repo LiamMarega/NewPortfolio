@@ -4,11 +4,11 @@ import Navbar from '../../components/Navbar';
 
 function BasePages(props) {
   return (
-    <>
+    <div className="ContainerBasePages">
       <Navbar />
       {props.children}
       <Footer />
-    </>
+    </div>
   );
 }
 

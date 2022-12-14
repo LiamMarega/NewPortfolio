@@ -104,6 +104,13 @@ body {
   align-items: center;
 }
 
+.flexStart {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
 .relative {
   position: relative;
 }

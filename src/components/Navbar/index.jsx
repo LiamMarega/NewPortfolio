@@ -134,9 +134,9 @@ function Navbar() {
             >
               <SegmentIcon />
             </Box>
-            {pages.map((page) => (
+            {pages.map((page, idx) => (
               <Button
-                key={page}
+                key={page + idx}
                 onClick={() => navigateTo(page.url)}
                 sx={{
                   my: 2,
