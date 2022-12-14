@@ -9,7 +9,7 @@
 
   .containerTexts {
     opacity: 0;
-    animation: 3s ease 7s normal forwards 1 fadeInOpacity;
+    animation: 3s ease 2s normal forwards 1 fadeInOpacity;
 
     h1 {
       font-size: 2.5rem;
@@ -25,7 +25,7 @@
   .LottieAnimation {
     position: relative;
     opacity: 0;
-    animation: 3s ease 6s normal forwards 1 fadeInOpacity;
+    animation: 3s ease 1s normal forwards 1 fadeInOpacity;
     z-index: 5;
 
     .LottieAnimationBurst {
