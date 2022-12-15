@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
 import App from './App';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { blue } from '@mui/material/colors';
+import './index.scss';
 import './assets/styles/index.scss';
+import 'swiper/css';
 
 const theme = createTheme({
   palette: {

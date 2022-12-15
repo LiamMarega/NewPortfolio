@@ -3,6 +3,7 @@ import React from 'react';
 import Loading from '../../components/Loading';
 import BasePages from '../Base';
 import AboutHome from './parts/About';
+import ProjectsHome from './parts/Projects';
 import WelcomeComponent from './parts/Welcome';
 import './styles.scss';
 
@@ -25,6 +26,7 @@ function Home() {
           <BasePages>
             <WelcomeComponent />
             <AboutHome />
+            <ProjectsHome />
           </BasePages>
         </div>
       )}
