@@ -1,4 +1,4 @@
-import { Box, Paper } from '@mui/material';
+import {Box, Paper} from '@mui/material';
 import React from 'react';
 import Loading from '../../components/Loading';
 import BasePages from '../Base';
